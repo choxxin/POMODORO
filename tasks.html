@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      #task-container {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        color: azure;
+        font-weight: bold;
+        font-family: "Times New Roman", Times, serif;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .completed {
+        text-decoration: line-through;
+        color: #ae0303;
+      }
+
+      button {
+        background-color: #579b5b;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="task-container">
+      <input type="text" id="newTaskInput" placeholder="Enter a new task" />
+      <button onclick="addTask()">Add Task</button>
+
+      <ul id="taskList"></ul>
+    </div>
+  </body>
+</html>
